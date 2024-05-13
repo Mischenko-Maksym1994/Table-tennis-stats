@@ -1,0 +1,131 @@
+li {
+    list-style: none;
+}
+
+.second_title {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+
+    width: auto;
+    padding: 25px;
+    height: auto;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+/* ////////////////////////////add new players ////////*/
+.error_message {
+    color: red;
+}
+
+
+/* //////////////////////////////team ///////////////////////*/
+
+.team_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+.players_list_item {
+    height: 30px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+/* //////////////////////////////team ///////////////////////*/
+
+
+.players_gaming_session {
+    margin-right: 20px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.border_element {
+    width: auto;
+    padding: 25px;
+    height: auto;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.generation_team {
+    min-width: 250px;
+}
+
+.players_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.players_list_item {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+/* ////////////////////////////////////////form//////////////////// */
+
+.gaming_session {
+    display: flex;
+}
+
+.gaming_session_list {
+    margin-left: 50px;
+}
+
+/* .form_parametrs {
+    display: flex;
+    flex-direction: colums;
+
+} */
+
+.form_item {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-left: 25px;
+}
+
+
+.form_item input {
+    width: inherit;
+}
+
+/* ///////////////////////////////////////////////// */
+.form_gaming_session {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+
+/*//////////////////////////////////form add game*/
+.form_add_game {
+    display: flex;
+}
+
+.form_item_number {
+    width: 30px;
+}
+
+.form_team_add {
+    display: flex;
+    flex-direction: row;
+}

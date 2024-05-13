@@ -5,10 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <!-- <load ="partials/header.html" /> -->
 
     <section>
       <h1>Example page title</h1>
@@ -16,9 +16,104 @@
       <img src="./img/javascript.svg" alt="" />
     </section>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <div class="registration">
+      <form class="form_add_player">
+        <label>
+          <input type="text" id="name" placeholder="Введите имя игрока">
+        </label>
+        <p class="outputName"></p>
+        <p class="error_message"></p>
+        <button type="submit" class="btn btn_add">Добавить игрока</button>
+      </form>
 
-    <script type="module" src="./main.js"></script>
+      <div class="regisration_players">
+        <h2 class="second_title">Список игроков <span class="js-quantityPlayers"></span></h2>
+        <ul class="players_list js_players_list">
+        </ul>
+      </div>
+
+      <div class="team">
+        <h2 class="second_title">Список всех возможных команд с игроками</h2>
+        <ul class="team_list js_team_list">
+        </ul>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2></h2>
+      <div class="generation_team">
+        <p>Команда № <span class="js-firstNumber"></span>
+        </p>
+        <p>Команда № <span class="js-secondNumber"></span>
+        </p>
+        <button class="btn js-btn">Сгенерировать</button>
+      </div>
+    </div>
+
+    <h3>Параметры для автоматического составления партий</h3>
+    <div class="gaming_session">
+
+      <form class="form_parametrs gaming_session_list">
+        <label class="form_item">
+          Количество партий
+          <input type="number" name="maxGame" placeholder="Введите число">
+        </label>
+
+        <label class="form_item">
+          Количество игроков
+          <input type="number" name="countPlayer" placeholder="Введите число">
+        </label>
+
+        <label class="form_item">
+          Минимальное кол-во партий для игрока
+          <input type="number" name="minGame" placeholder="Введите число">
+          <span class=""></span></label>
+      </form>
+
+
+      <form class="form_gaming_session js_form_GS gaming_session_list">
+        <p>Отметить игроков готовых играть</p>
+        <button type="submit">Подтвердить</button>
+      </form>
+    </div>
+
+    <div>
+      <h3>Записать результат игр</h3>
+      <form class="form_add_game">
+
+        <label>
+          <input type="date" id="data-game">
+        </label>
+        <label>
+          Team 1
+          <select name="chooseTeam" id="Team1" class="js_choose_team1"></select>
+        </label>
+
+        <label>
+          <input type="number" name="" min="0" max="22" id="scoreTeam1" class="form_item_number">
+        </label>
+        <label>
+          <input type="number" name="" min="0" max="22" id="scoreTeam2" class="form_item_number">
+        </label>
+
+        <label class="reverse_label">
+          <select name="chooseTeam" id="Team2" class="js_choose_team2"></select>
+          Team 2
+        </label>
+
+        <button type="submit" class="btn js_add_game">Добавить</button>
+
+      </form>
+
+    </div>
+
+
+<!-- <script src="/JavaScript/logic.js"></script> -->
+<script src="./index.js" type="module"></script>
+
+    <!-- Loads the specified .html file -->
+    <!-- <load ="partials/vite-promo.html" /> -->
+
+    <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
